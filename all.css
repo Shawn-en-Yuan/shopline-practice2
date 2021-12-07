@@ -1,0 +1,378 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    font-size: 16px;
+	line-height: 1.5;
+    color: #324255;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+    max-width:100%;
+    height:auto;
+}
+*,*::before,*::after{
+    box-sizing:border-box;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    font-weight: 800;
+}
+/* ////////////////////////// */
+header{
+    position: sticky;
+    background:#fff;
+    top: 0;
+    box-shadow: 0 0 12px 0 rgb(36 50 66 / 8%);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.head{
+    background-color: #00142D;
+}
+.head-item{
+    display: flex;
+    justify-content: end;
+}
+.header nav{
+    display: flex;
+    align-items: center;
+}
+.header nav a{
+    padding: 0 10px;
+    font-size: 18px;
+}
+.material-icons.md-16{ 
+    font-size: 16px; 
+}
+.head-item a{
+    color: white;
+    padding: 10px;
+}
+.head-item span{
+    padding-right: 10px;
+    border-right: 1px solid white;
+}
+.header{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.header a{
+    color:#324255;
+}
+.header button{
+    color: white;
+    background-color: #0061FF;
+    border-radius: 26px;
+    padding: 0 20px;
+}
+.banner{
+    background: url("https://img.shoplineapp.com/media/image_clips/5f069a12dc4d9a00335656c2/original.png?1594268177") no-repeat center  100%;
+    padding: 80px 0;
+    
+}
+.banner-content{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.banner.content,.banner img{
+    width: 50%;
+}
+h2{
+    font-size: 36px;
+}
+h3{
+    font-size: 28px;
+}
+.banner p{
+    padding: 30px 0;
+}
+.banner input{
+    background-color: unset;
+    border: unset;
+    border-bottom: 1px solid white;
+    font-size: 22px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.banner input::placeholder{
+    color: white;
+}
+.banner button{
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+    padding: 10px 0;
+    background-color: #0061FF;
+}
+.banner input,.banner button{
+    width: 100%;
+    margin: 10px 0;
+    color: white;
+}
+.introduction{
+    text-align: center;
+    padding: 100px 0;
+}
+.introduction h2{
+    margin-bottom: 30px;
+}
+
+.info{
+    display: flex;
+    border-bottom: 1px solid #E0E5E9;
+    padding: 100px 0;
+}
+.info-content, .info-pic{
+    width: 50%;
+}
+.info-content ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.info-content li{
+    font-weight: 500;
+    width: 50%;
+}
+.info-content h2, .info-content p, .info-content ul{
+    margin-bottom: 25px;
+} 
+.info-content p:nth-child(2){
+    color: #fd7e14;
+}
+.info-content :nth-child(n+1){
+    line-height: 2;
+}
+.info-content li::before{
+    content: " ";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    margin-right: 5px;
+} 
+.info-content a{
+    color: #0061FF;
+}
+.info:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.features{
+    padding: 100px 0;
+    text-align: center;
+    background: #F4F5F7;
+}
+.features-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.features-card{
+    width: 33.33%;
+    margin-bottom: 50px;
+}
+.features-img{
+    background-color: #fff;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.features h2{
+    margin-bottom: 50px;
+}
+.features-card p{
+    text-align: start;
+    padding: 0 20px;
+}
+.brand{
+    padding: 60px 0;
+}
+.brand h2{
+    margin-bottom: 45px;
+    text-align: center;
+}
+.brand span{
+    color: #0061FF;
+}
+.brand-list{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #E0E5E9;
+}
+.brand-item{
+    padding: 20px;
+}
+.brand-item.active{
+    border-bottom: 4px solid #0061FF;
+}
+.brand-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.brand-pic{
+    width: 60%;
+}
+.brand-content{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.brand-content a{
+    color: #0061FF;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.signature{
+    font-size: 24px;
+}
+footer{
+    background: #00142D;
+    padding-bottom: 80px;
+}
+.footer-try{
+    background: url(https://img.shoplineapp.com/media/image_clips/5f069a1114b23b004875a301/original.png?1594268176)no-repeat center 100%;
+    background-color: #172B4D ;
+}
+.footer-container{
+    display: flex;
+}
+.footer-content h2{
+    color: white;
+    font-weight: 600;
+    padding: 50px 0;
+}
+.footer-content a{
+    display: block;
+    width: 80%;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    background: #0061FF;
+    color: white;
+}
+.footer-content h2 span{
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+    z-index: 5;
+}
+.footer-content h2 span::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 20px;
+    background-color: #0061FF;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    z-index: -1;
+}
+.footer-list{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-list{
+    margin-top: 50px;
+    padding: 50px 0;
+    border-top: 1px solid #748094;
+}
+.footer-item h3{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.footer-item li {
+    padding: 3px 0;
+}
+.footer-item a{
+    display: block;
+    color: #748094;
+}
+.footer-item a:hover{
+    color: #fff;
+}
+.covid{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 50px;
+}
+.covid a{
+    display: inline-block;
+    width: 225px;
+    text-align: center;
+    background-color: #dbf8ed;
+    padding: 5px 0;
+    color: #000;
+}
+.covid a:hover {
+    opacity: 0.8;
+}
+.footer-connect{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #748094;
+    padding-top: 50px;
+}
+.footer-connect ul{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-connect ul li a{
+    color: #fff;
+    padding: 0 10px;
+    font-size: 24px;
+}
+.footer-connect ul:nth-child(1) li:nth-child(2) a{
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
